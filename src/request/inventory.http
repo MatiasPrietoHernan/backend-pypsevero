@@ -1,0 +1,25 @@
+# Obtener todos los inventarios
+GET http://localhost:3000/api/get/inventory
+
+### Crear un inventario
+POST http://localhost:3000/api/add/inventory
+Content-Type: application/json
+
+{
+  "name": "Producto Inventariado",
+  "quantity": 100,
+  "suppliers": "673bd67049515b11bdb2fdd1"
+}
+
+### Actualizar un inventario (cambiar ID por uno real)
+PUT http://localhost:3000/api/update/inventory/673bd66f49515b11bdb2fdcc
+Content-Type: application/json
+
+{
+  "name": "Inventario Actualizado",
+  "quantity": 150,
+  "suppliers": "673bd67049515b11bdb2fdd1"
+}
+
+### Eliminar un inventario (cambiar ID por uno real)
+DELETE http://localhost:3000/api/delete/inventory/ID_DEL_INVENTARIO
